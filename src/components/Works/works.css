@@ -1,0 +1,99 @@
+#works {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.worksTitle {
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+.worksDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 45rem;
+}
+
+
+.worksImgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.worksImgContainer {
+    position: relative;
+    width: 30%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+}
+
+.worksImg {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.worksImgContainer:hover .overlay {
+    opacity: 1;
+}
+
+.projectName {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.pressBtn {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.workBtn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto; 
+}
+
+@media screen and (max-width:585px) {
+    .worksImg {
+        height: 48vw;
+    }
+}
